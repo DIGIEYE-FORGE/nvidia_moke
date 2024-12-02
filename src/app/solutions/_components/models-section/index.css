@@ -1,0 +1,8 @@
+[class^="swiper-button"] {
+  @apply aspect-square size-9 rounded-full border bg-background;
+}
+[class^="swiper-button"]::after {
+  @apply text-foreground;
+  font-size: medium;
+  font-weight: bold;
+}
