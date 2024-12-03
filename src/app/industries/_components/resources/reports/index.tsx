@@ -49,9 +49,9 @@ export function Reports() {
             src={item.image}
             alt=""
           />
-          <div className="flex h-1 flex-1 flex-col gap-6 p-6">
-            <h3 className="text-xl font-bold">{item.title}</h3>
-            <p>{item.description}</p>
+          <div className="flex h-1 flex-1 flex-col gap-4 p-4 lg:gap-6 lg:p-6">
+            <h3 className="text-lg font-bold lg:text-xl">{item.title}</h3>
+            <p className="max-lg:text-sm">{item.description}</p>
             <CustomLink
               href="/industries"
               name="Read Ebook"

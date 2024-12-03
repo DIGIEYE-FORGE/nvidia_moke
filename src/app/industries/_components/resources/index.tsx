@@ -56,23 +56,23 @@ export default function ResourcesSection() {
     >
       <main className="mx-auto w-full max-w-screen-2xl space-y-4 p-container">
         <h4 className="text-center text-xl font-bold">Resources</h4>
-        <h2 className="text-center text-4xl font-bold">
+        <h2 className="text-center text-[clamp(1.25rem,2.5vw,2.5rem)] font-bold">
           Take a Deeper Dive Into AI Across Industries
         </h2>
         <div className="relative isolate">
-          <ul className="mx-auto mb-6 flex w-fit gap-4">
+          <ul className="mx-auto mb-6 flex w-fit gap-2 text-sm lg:gap-4">
             {tabs.map(({ title }, index) => (
-              <li key={index} className="relative">
+              <li key={index} className="relative flex items-center">
                 <button
                   className={cn(
-                    "relative p-2 font-medium opacity-75 hover:opacity-100",
+                    "relative py-2 font-medium opacity-75 hover:opacity-100",
                     {
                       "opacity-100": active === index,
                     },
                   )}
                   onClick={() => setActive(index)}
                 >
-                  {title}
+                  <span>{title}</span>
                 </button>
                 {active === index && (
                   <motion.div

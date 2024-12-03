@@ -3,14 +3,14 @@ import { motion } from "framer-motion";
 
 export function Videos() {
   return (
-    <div className="grid h-[20rem] grid-cols-2 gap-container px-container">
+    <div className="grid h-[20rem] min-h-fit gap-container px-container lg:grid-cols-2">
       <motion.img
         initial={{ opacity: 0 }}
         animate={{ opacity: 1, transition: { delay: 0.3 } }}
         transition={{ duration: 1 }}
         src="https://www.nvidia.com/content/dam/en-zz/Solutions/industries/home/industries-resources-video-banner-background-image-spec2-bb770_550-d.jpg"
         alt=""
-        className="absolute inset-0 -z-10 w-full object-cover"
+        className="absolute inset-0 -z-10 w-full object-cover max-lg:hidden"
       />
       <div></div>
       <div className="flex flex-col justify-center gap-4">

@@ -18,11 +18,11 @@ export function Ebook() {
           src="https://www.nvidia.com/en-us/industries/home/_jcr_content/root/responsivegrid/nv_container_4363795/nv_tabs/item_1706505618125/nv_container_copy/nv_teaser_copy.coreimg.100.630.jpeg/1724862269709/industries-overview-ebook-1920x1080.jpeg"
           alt=""
         />
-        <div className="flex flex-col gap-6 p-6">
-          <h3 className="text-xl font-bold">
+        <div className="flex flex-col gap-4 p-4 lg:gap-6 lg:p-6">
+          <h3 className="text-lg font-bold lg:text-xl">
             How Businesses Are Harnessing AI to Drive Value
           </h3>
-          <p>
+          <p className="max-lg:text-sm">
             Learn how AI is powering new capabilities in the public sector,
             financial services, healthcare and life sciences,
             telecommunications, and retail industries.
