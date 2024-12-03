@@ -15,10 +15,10 @@ export default function GetStartedSection() {
         </h2>
         <ul className="mt-8 grid grid-cols-[repeat(auto-fit,minmax(20rem,1fr))] gap-4">
           {data.items.map((item, index) => (
-            <li key={index} className="space-y-4">
+            <li key={index} className="flex flex-col gap-4">
               <h3 className="text-2xl font-bold">{item.title}</h3>
               <p>{item.description}</p>
-              <div>
+              <div className="mt-auto">
                 {item.link.type === "outline" ? (
                   <CustomLink
                     className="font-bold"

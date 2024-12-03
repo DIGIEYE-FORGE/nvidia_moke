@@ -12,7 +12,7 @@ import EcosystemSection from "./_components/ecosystem-section";
 
 export default function Page() {
   return (
-    <main className="[&>*]:scroll-m-[calc(var(--upbar-height)+var(--navbar-height)-4px)]">
+    <main className="isolate [&>*]:scroll-m-[calc(var(--upbar-height)+var(--navbar-height)-4px)]">
       <HeroSection />
       <Navbar />
       <ModelsSection />
