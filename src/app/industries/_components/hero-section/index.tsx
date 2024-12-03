@@ -22,7 +22,14 @@ export default function HeroSection() {
         >
           <source src={data.videoUrl} type="video/webm" />
         </video>
-        <h2 className="relative z-10 text-5xl font-bold">{data.title}</h2>
+        <h2
+          className="relative z-10 text-5xl font-bold"
+          style={{
+            WebkitTextStroke: "2px black",
+          }}
+        >
+          {data.title}
+        </h2>
       </main>
     </section>
   );
