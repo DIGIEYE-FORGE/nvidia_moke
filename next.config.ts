@@ -5,6 +5,7 @@ const nextConfig: NextConfig = {
   images: {
     domains: ["www.nvidia.com"],
   },
+  output: "standalone",
 };
 
 export default nextConfig;
