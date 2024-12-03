@@ -34,7 +34,7 @@ body {
     --chart-5: 27 87% 67%;
     --radius: 0.5rem;
     --container-padding: clamp(1rem, 5vw, 5rem);
-    --upbar-height: 2.75rem;
+    --upbar-height: 3.5rem;
     --navbar-height: 3.5rem;
   }
   .dark {

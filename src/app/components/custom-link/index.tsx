@@ -16,13 +16,17 @@ export function CustomLink({ name, href, className }: CustomLinkProps) {
         className,
       )}
     >
-      {name.split(" ").map((word, index) => (
-        <span key={index}>{word}</span>
+      {name.split(" ").map((word, index, arr) => (
+        <span className="flex" key={index}>
+          {word}
+          {index === arr.length - 1 && (
+            <ChevronRightIcon
+              strokeWidth={3}
+              className="shrink-0 text-primary transition-[color,transform] duration-500 group-hover:translate-x-1 group-hover:text-foreground"
+            />
+          )}
+        </span>
       ))}
-      <ChevronRightIcon
-        strokeWidth={3}
-        className="shrink-0 text-primary transition-[color,transform] duration-500 group-hover:translate-x-1 group-hover:text-foreground"
-      />
     </Link>
   );
 }
